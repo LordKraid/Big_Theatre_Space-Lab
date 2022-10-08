@@ -1,0 +1,17 @@
+@import url(null.css);
+@import url(header.scss);
+@import url(footer.scss);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@font-face {
+  font-family: "Open Sans Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Condensed"), url("../source/fonts/OpenSans_Condensed-Bold.woff") format("woff");
+}
+body {
+  overflow-x: hidden;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #FFFFFF;
+  font-size: 14px;
+  background-color: #333333;
+}/*# sourceMappingURL=index.css.map */
