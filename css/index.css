@@ -76,7 +76,7 @@ body {
 }
 
 .side-bar {
-  position: absolute;
+  position: fixed;
   display: inline-block;
   width: 150px;
   height: 100vh;
