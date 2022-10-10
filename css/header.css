@@ -1,4 +1,6 @@
 header {
+  position: fixed;
+  width: 100%;
   padding-top: 50px;
 }
 header .header__flex {
@@ -41,6 +43,11 @@ header .header__flex .number {
 ._underline-anim:hover {
   background-size: 100% 2px;
   padding-bottom: 3px;
+}
+
+._underline-anim:active {
+  transition: 0.1s;
+  color: #D1A954;
 }
 
 @media (max-width: 992px) {
