@@ -1,6 +1,6 @@
 @import url(null.css);
-@import url(header.scss);
-@import url(footer.scss);
+@import url(header.css);
+@import url(footer.css);
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 @font-face {
   font-family: "Open Sans Condensed";
@@ -12,6 +12,13 @@ body {
   overflow-x: hidden;
   font-family: "Open Sans Condensed", sans-serif;
   color: #FFFFFF;
+  font-weight: 700;
   font-size: 14px;
   background-color: #333333;
+}
+
+._content {
+  max-width: 1171px;
+  margin: 0 auto;
+  padding: 0 30px;
 }/*# sourceMappingURL=index.css.map */
