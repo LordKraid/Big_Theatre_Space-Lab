@@ -15,7 +15,7 @@ body {
   color: #FFFFFF;
   font-weight: 700;
   font-size: 14px;
-  background-color: #333333;
+  background-color: rgb(51, 51, 51);
 }
 
 ._content {
@@ -176,6 +176,45 @@ body {
 }
 .about .about__flex .about__img img {
   height: 100%;
+}
+
+.grade .grade__img {
+  width: 100%;
+  height: 611px;
+  background-image: url("../source/img/grade_back.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  margin-top: 90px;
+}
+.grade .grade__img .grade__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.grade .grade__img .grade__flex .grade__years {
+  font-size: 72px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #D1A954;
+  margin-right: 100px;
+}
+.grade .grade__img .grade__flex .grade__info {
+  padding-right: 15px;
+}
+.grade .grade__img .grade__flex .grade__info .grade__stars {
+  padding-bottom: 25px;
+}
+.grade .grade__img .grade__flex .grade__info .grade__stars img {
+  padding-right: 25px;
+}
+.grade .grade__img .grade__flex .grade__info p {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
 }
 
 .partners {
@@ -348,6 +387,16 @@ body {
     font-size: 48px;
     line-height: 65px;
   }
+  .grade ._content {
+    margin: 0;
+    padding: 0;
+  }
+  .grade .grade__img {
+    margin-top: 150px;
+  }
+  .grade .grade__img .grade__flex {
+    margin-left: 165px;
+  }
   .partners h1 {
     font-size: 48px;
     line-height: 65px;
@@ -404,6 +453,18 @@ body {
   .side-bar {
     display: none;
   }
+  .grade .grade__img {
+    margin-top: 90px;
+  }
+  .grade .grade__img .grade__flex {
+    margin-left: 0;
+  }
+  .grade .grade__img .grade__flex .grade__years {
+    margin-right: 15px;
+  }
+  .grade .grade__img .grade__flex .grade__info p {
+    font-size: 29px;
+  }
   .partners .partners__grid {
     width: 93.4%;
   }
@@ -437,6 +498,9 @@ body {
   }
   .about .about__flex .about__img {
     display: none;
+  }
+  .grade .grade__img {
+    margin-top: 80px;
   }
   .maecenas .maecenas__flex .maecenas__contacts {
     padding-top: 50px;
