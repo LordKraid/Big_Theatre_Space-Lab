@@ -202,8 +202,7 @@ body {
   width: 70%;
 }
 .partners .partners__grid img {
-  padding-top: 130px;
-  padding-right: 30px;
+  padding: 130px 15px 0;
 }
 
 @media (max-width: 1500px) {
