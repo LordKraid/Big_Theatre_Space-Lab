@@ -294,6 +294,13 @@ body {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+.maecenas .maecenas__flex .maecenas__contacts .maecenas__contacts_flex a {
+  transition: 0.2s;
+}
+.maecenas .maecenas__flex .maecenas__contacts .maecenas__contacts_flex a:hover {
+  transition: 0.2s;
+  color: #D1A954;
+}
 .maecenas .maecenas__flex .maecenas__contacts .maecenas__contacts_flex .maecenas__phones p {
   margin-bottom: 25px;
 }
@@ -339,6 +346,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
+  flex-basis: 55%;
 }
 .maecenas .maecenas__flex .maecenas__add .maecenas__forms .forms__small-form_flex .forms__small-form_flex-row-left, .maecenas .maecenas__flex .maecenas__add .maecenas__forms .forms__small-form_flex .forms__small-form_flex-row-right {
   display: flex;
