@@ -409,10 +409,11 @@ body{
                 }
 
                 .forms__big-form{
+                    flex-basis: 45%;
                     margin-left: 30px;
 
                     input{
-                        width: 310px;
+                        width: 100%;
                         height: 100px;
                     }
                 }
