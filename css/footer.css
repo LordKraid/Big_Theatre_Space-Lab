@@ -1,27 +1,3 @@
-footer .footer__top {
-  display: none;
-  padding-top: 80px;
-}
-footer .footer__top .footer__top_flex {
-  display: flex;
-  justify-content: space-between;
-}
-footer .footer__top .footer__top_flex p {
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-footer .footer__top .footer__top_flex .footer__phones .footer__top_first-number {
-  margin-bottom: 25px;
-}
-footer .footer__top .footer__top_flex .footer__adress {
-  text-align: right;
-}
-footer .footer__top .footer__top_flex .footer__adress .footer__top_site {
-  margin-bottom: 25px;
-  text-decoration: underline;
-}
 footer .footer__bottom {
   padding-top: 80px;
 }
@@ -46,23 +22,12 @@ footer .footer__bottom .footer__bottom_flex p:last-child {
   margin-left: 50px;
 }
 
-@media (max-width: 992px) {
-  footer .footer__top {
-    display: block;
-  }
-}
 @media (max-width: 768px) {
-  footer .footer__top {
-    padding-top: 60px;
-  }
   footer .footer__bottom {
     padding-top: 60px;
   }
 }
 @media (max-width: 576px) {
-  footer .footer__top {
-    padding-top: 50px;
-  }
   footer .footer__bottom {
     padding-top: 60px;
   }
