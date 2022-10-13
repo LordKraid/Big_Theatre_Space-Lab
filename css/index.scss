@@ -210,6 +210,43 @@ body{
     }
 }
 
+.partners{
+    padding-top: 150px;
+
+    h1{
+        font-size: 64px;
+        line-height: 87px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        span{color: #D1A954;}
+    }
+
+    .partners__grid{
+        display: grid;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        justify-items: center;
+        align-items: center;
+
+        padding-top: 7px;
+
+        overflow: hidden;
+        width: 70%;
+
+        img{
+            padding-top: 130px;
+            padding-right: 30px;
+
+            //width: 100%;
+        }
+    }
+}
+
 
 
 
@@ -266,6 +303,13 @@ body{
                 line-height: 65px;
             }
     }
+
+    .partners{
+        h1{
+            font-size: 48px;
+            line-height: 65px;
+        }
+    }
 }
 
 @media  (max-width: 768px){
@@ -305,6 +349,12 @@ body{
 
     .side-bar{
         display: none;
+    }
+
+    .partners{
+        .partners__grid{
+            width: 93.4%;
+        }
     }
 }
 
