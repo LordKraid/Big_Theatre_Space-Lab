@@ -121,6 +121,13 @@ body{
 
             h2{writing-mode: vertical-rl;}
             transform: rotate(-180deg);
+
+            transition: 0.2s;
+        }
+
+        .side-bar__text:hover{
+            transition: 0.2s;
+            color:#D1A954
         }
 
         .side-bar__line{
@@ -208,6 +215,25 @@ body{
 
             img{height: 100%;}
         }
+    }
+}
+
+.productions{
+    h1{
+        font-size: 64px;
+        line-height: 87px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        padding-top: 150px;
+        margin-bottom: 78px;
+
+        span{color: #D1A954;}
+    }
+
+    .productions__swiper{
+        margin-left: 165px;
     }
 }
 
@@ -350,6 +376,17 @@ body{
                     background: #444444;
                     border: 1px solid #616161;
                     padding-left: 15px;
+                    
+                    color: #989898;
+                }
+
+                input::placeholder{
+                    font-family: 'Open Sans';
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 150%;
+
+                    color: #989898;
                 }
 
                 .forms__small-form_flex{
@@ -373,6 +410,7 @@ body{
 
                 .forms__big-form{
                     margin-left: 30px;
+
                     input{
                         width: 310px;
                         height: 100px;

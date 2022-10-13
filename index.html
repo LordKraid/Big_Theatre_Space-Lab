@@ -9,6 +9,13 @@
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <script>
@@ -53,7 +60,7 @@
         <div class="side-bar">
             <div class="side-bar__flex">
                 <div class="side-bar__text">
-                    <h2>контактна інформація</h2>
+                    <h2><a href="#">контактна інформація</a></h2>
                 </div>
 
                 <div class="side-bar__line"></div>
@@ -131,6 +138,19 @@
                     <div class="about__img">
                         <img src="source/img/about_img.jpg" alt="about_img">
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="productions">
+            <h1 class="_content"><span>наші</span> постановки</h1>
+
+            <div class="productions__swiper swiper"> 
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="source/img/productions_1.jpg" alt="productions"></div>
+                    <div class="swiper-slide"><img src="source/img/productions_2.jpg" alt="productions"></div>
+                    <div class="swiper-slide"><img src="source/img/productions_3.jpg" alt="productions"></div>
+                    <div class="swiper-slide"><img src="source/img/productions_4.jpg" alt="productions"></div>
                 </div>
             </div>
         </div>
@@ -216,18 +236,18 @@
                         <div class="maecenas__forms">
                             <div class="forms__small-form_flex">
                                 <div class="forms__small-form_flex-row-left">
-                                    <input type="text">
-                                    <input type="text">
+                                    <input type="text" placeholder="Ім’я">
+                                    <input type="text" placeholder="Телефон">
                                 </div>
 
                                 <div class="forms__small-form_flex-row-right">
-                                    <input type="text">
-                                    <input type="text">
+                                    <input type="text" placeholder="Компанія">
+                                    <input type="text" placeholder="E-mail">
                                 </div>
                             </div>
 
                             <div class="forms__big-form">
-                                <input type="text">
+                                <input type="text-area" placeholder="Повідомлення">
                             </div>
                         </div>
 
@@ -264,5 +284,11 @@
         </footer>
 
     </div>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 4,
+        });
+    </script>
 </body>
 </html>
