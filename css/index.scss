@@ -32,7 +32,7 @@ body{
 .main{
     height: 100vh;
     
-    background-image: url('../source/img/main_back.jpg');
+    background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url('../source/img/main_back.jpg');
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -234,6 +234,27 @@ body{
 
     .productions__swiper{
         margin-left: 165px;
+
+        .swiper-wrapper{
+            .swiper-slide{
+                background-position: 50% 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                height: 550px;
+
+                transition: 0.2s;
+            }
+
+            .swiper-slide:hover{
+                filter: brightness(1.5)
+            }
+
+            .slide-1{background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url(../source/img/productions_1.jpg);}
+            .slide-2{background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url(../source/img/productions_2.jpg);}
+            .slide-3{background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url(../source/img/productions_3.jpg);}
+            .slide-4{background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url(../source/img/productions_4.jpg);}
+        }
     }
 }
 
@@ -243,7 +264,7 @@ body{
         width: 100%;
         height: 611px;
 
-        background-image: url('../source/img/grade_back.jpg');
+        background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)), url('../source/img/grade_back.jpg');
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: 110%;
@@ -288,8 +309,6 @@ body{
 }
 
 .partners{
-    padding-top: 150px;
-
     h1{
         font-size: 64px;
         line-height: 87px;
@@ -298,6 +317,8 @@ body{
         text-transform: uppercase;
 
         span{color: #D1A954;}
+
+        padding-top: 150px;
     }
 
     .partners__grid{
@@ -401,12 +422,14 @@ body{
                     justify-content: space-between;
                     flex-grow: 1;
 
-                    flex-basis: 55%;
+                    //flex-basis: 55%;
                     
                     .forms__small-form_flex-row-left, .forms__small-form_flex-row-right{
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
+
+                        flex-grow: 1;
                     }
 
                     .forms__small-form_flex-row-right{margin-left: 30px;}
@@ -452,6 +475,8 @@ body{
     
                     transition: 0.3s;
                     border: solid #D1A954 2px;
+
+                    margin-left: 30px;
     
                     span{
                         font-size: 18px;
@@ -664,6 +689,23 @@ body{
             .maecenas__contacts{padding-top: 60px;}
         }
     }
+
+    
+    //h1
+    .about{
+        h1{padding-top: 90px;}
+    }
+    .productions{
+        h1{padding-top: 90px;}
+    }
+    .grade{padding-top: 90px;}
+    .partners{
+        h1{padding-top: 90px;}
+    }
+    .maecenas{
+        h1{padding-top: 90px;}
+    }
+    //
 }
 
 @media  (max-width: 576px){
@@ -731,4 +773,20 @@ body{
             }
         }
     }
+
+    //h1
+    .about{
+        h1{padding-top: 80px;}
+    }
+    .productions{
+        h1{padding-top: 80px;}
+    }
+    .grade{padding-top: 80px;}
+    .partners{
+        h1{padding-top: 80px;}
+    }
+    .maecenas{
+        h1{padding-top: 80px;}
+    }
+    //
 }
