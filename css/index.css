@@ -199,7 +199,7 @@ body {
   margin-left: 165px;
 }
 .productions .productions__swiper .swiper-wrapper .swiper-slide {
-  background-position: 50% 100%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 550px;
@@ -556,6 +556,9 @@ body {
   }
   .side-bar {
     display: none;
+  }
+  .productions .productions__swiper {
+    margin-left: 30px;
   }
   .grade .grade__img {
     margin-top: 90px;
