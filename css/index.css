@@ -273,6 +273,7 @@ body {
 }
 .productions .productions__swiper {
   margin-left: 165px;
+  overflow: hidden;
 }
 .productions .productions__swiper .swiper-wrapper .swiper-slide {
   background-position: 50% 50%;
@@ -561,6 +562,7 @@ body {
   }
   .main .main__flex .main__info {
     max-width: 800px;
+    margin-right: 0;
   }
   .main .main__flex .main__slider {
     display: none;

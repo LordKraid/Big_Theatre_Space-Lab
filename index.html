@@ -366,34 +366,29 @@
     </div>
 
     <script>
-        
-        sliderProduction()
-        window.onresize = sliderProduction
 
-        function sliderProduction () {
-            if(window.innerWidth > 992) {
-                const swiperProduction = new Swiper('.productions__swiper', {
-                    slidesPerView: 4,
-                });
-            } else if(window.innerWidth > 576) {
-                const swiperProduction = new Swiper('.productions__swiper', {
-                    slidesPerView: 1.55,
-                });
-            } else if(window.innerWidth <= 576) {
-                const swiperProduction = new Swiper('.productions__swiper', {
-                    slidesPerView: 1.1,
-                });
-            }
-        }
-
-
-        const swiperProduction = new Swiper('.main__swiper', {
+        const swiperMain = new Swiper('.main__swiper', {
             slidesPerView: 1,
             loop: true,
+            effect: 'fade',
 
             navigation: {
                 nextEl: '.next',
                 prevEl: '.prev'
+            }
+        });
+        
+        const swiperProduction = new Swiper('.productions__swiper', {
+            breakpoints: {
+                992: {
+                    slidesPerView: 4,
+                },
+                768: {
+                    slidesPerView: 1.55,
+                },
+                576: {
+                    slidesPerView: 1.1,
+                }
             }
         });
 

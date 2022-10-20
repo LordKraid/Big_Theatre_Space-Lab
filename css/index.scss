@@ -345,6 +345,7 @@ body{
 
     .productions__swiper{
         margin-left: 165px;
+        overflow: hidden;
 
         .swiper-wrapper{
             .swiper-slide{
@@ -691,6 +692,7 @@ body{
             display: block;
             .main__info{
                 max-width: 800px;
+                margin-right: 0;
             }
 
             .main__slider{display: none;}
