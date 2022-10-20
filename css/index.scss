@@ -43,6 +43,10 @@ body{
 
         .main__info{
             max-width: 600px;
+            flex-basis: 70%;
+
+            margin-right: 70px;
+            
 
             h1{
                 font-size: 48px;
@@ -88,6 +92,91 @@ body{
                 transition: 0.1s;
                 border: solid #D1A954 2px;
                 background-color: #333333;
+            }
+        }
+
+        .main__slider{
+            flex-basis: 30%;
+            min-width: 0;
+            min-height: 0;
+
+            .main__swiper{
+                overflow: hidden;
+    
+                .swiper-wrapper{
+                    .swiper-slide{
+                        width: 350px;
+                        height: 490px;
+    
+                        background-position: 50% 100%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+    
+                    .main__swiper_slide-1{
+                        background-image: url('../source/img/main-slide1.jpg');
+                    }
+    
+                    .main__swiper_slide-2{
+                        background-image: url('../source/img/main-slide2.jpg');
+                    }
+    
+                    .main__swiper_slide-3{
+                        background-image: url('../source/img/main-slide3.jpg');
+                    }
+                }
+
+                .swiper__navigation{
+                    display: flex;
+                    justify-content: space-between;
+
+                    padding-top: 36px;
+
+                    -moz-user-select: none;
+                    -khtml-user-select: none;
+                    user-select: none;    
+
+                    .navigator__button{
+                        display: flex;
+                        align-items: center;
+
+                        h2{
+                            font-size: 16px;
+                            line-height: 22px;
+                            letter-spacing: 0.05em;
+                            text-transform: uppercase;
+                            color: #C4C4C4;
+                        }
+    
+                        .arrow{
+                            padding: 0 10px;
+
+                            svg{
+                                path{
+                                    fill: #C4C4C4;
+                                }
+                            }
+                        }
+                    }
+
+                    .navigator__button:hover{
+                        h2{color: #D1A954;}
+                        .arrow{
+                            svg{
+                                path{fill: #D1A954;}
+                            }
+                        }
+                    }
+
+                    .navigator__button:active{
+                        h2{color: #FFFFFF;}
+                        .arrow{
+                            svg{
+                                path{fill: #FFFFFF;}
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -143,7 +232,29 @@ body{
             display: flex;
             flex-direction: column;
 
-            li{margin-top: 30px;}
+            li{
+                margin-top: 30px;
+                svg{
+                    path{
+                        fill: rgba(255, 255, 255, 0.6);
+                        transition: 0.1s;
+                    }
+                }
+
+                svg:hover{
+                    path{
+                        fill: #D1A954;
+                        transition: 0.1s;
+                    }
+                }
+
+                svg:active{
+                    path{
+                        fill: #FFFFFF;
+                        transition: 0.1s;
+                    }
+                }
+            }
         }
     }
 }
@@ -577,9 +688,12 @@ body{
 @media  (max-width: 992px){
     .main{
         .main__flex{
+            display: block;
             .main__info{
                 max-width: 800px;
             }
+
+            .main__slider{display: none;}
         }
     }
 

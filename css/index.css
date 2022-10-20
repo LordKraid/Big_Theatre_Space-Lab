@@ -37,6 +37,8 @@ body {
 }
 .main .main__flex .main__info {
   max-width: 600px;
+  flex-basis: 70%;
+  margin-right: 70px;
 }
 .main .main__flex .main__info h1 {
   font-size: 48px;
@@ -74,6 +76,68 @@ body {
   transition: 0.1s;
   border: solid #D1A954 2px;
   background-color: #333333;
+}
+.main .main__flex .main__slider {
+  flex-basis: 30%;
+  min-width: 0;
+  min-height: 0;
+}
+.main .main__flex .main__slider .main__swiper {
+  overflow: hidden;
+}
+.main .main__flex .main__slider .main__swiper .swiper-wrapper .swiper-slide {
+  width: 350px;
+  height: 490px;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .main__flex .main__slider .main__swiper .swiper-wrapper .main__swiper_slide-1 {
+  background-image: url("../source/img/main-slide1.jpg");
+}
+.main .main__flex .main__slider .main__swiper .swiper-wrapper .main__swiper_slide-2 {
+  background-image: url("../source/img/main-slide2.jpg");
+}
+.main .main__flex .main__slider .main__swiper .swiper-wrapper .main__swiper_slide-3 {
+  background-image: url("../source/img/main-slide3.jpg");
+}
+.main .main__flex .main__slider .main__swiper .swiper__navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.main .main__flex .main__slider .main__swiper .swiper__navigation .navigator__button {
+  display: flex;
+  align-items: center;
+}
+.main .main__flex .main__slider .main__swiper .swiper__navigation .navigator__button h2 {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #C4C4C4;
+}
+.main .main__flex .main__slider .main__swiper .swiper__navigation .navigator__button .arrow {
+  padding: 0 10px;
+}
+.main .main__flex .main__slider .main__swiper .swiper__navigation .navigator__button .arrow svg path {
+  fill: #C4C4C4;
+}
+.main .main__flex .main__slider .main__swiper .swiper__navigation .navigator__button:hover h2 {
+  color: #D1A954;
+}
+.main .main__flex .main__slider .main__swiper .swiper__navigation .navigator__button:hover .arrow svg path {
+  fill: #D1A954;
+}
+.main .main__flex .main__slider .main__swiper .swiper__navigation .navigator__button:active h2 {
+  color: #FFFFFF;
+}
+.main .main__flex .main__slider .main__swiper .swiper__navigation .navigator__button:active .arrow svg path {
+  fill: #FFFFFF;
 }
 
 .side-bar {
@@ -122,6 +186,18 @@ body {
 }
 .side-bar .side-bar__flex .side-bar__social li {
   margin-top: 30px;
+}
+.side-bar .side-bar__flex .side-bar__social li svg path {
+  fill: rgba(255, 255, 255, 0.6);
+  transition: 0.1s;
+}
+.side-bar .side-bar__flex .side-bar__social li svg:hover path {
+  fill: #D1A954;
+  transition: 0.1s;
+}
+.side-bar .side-bar__flex .side-bar__social li svg:active path {
+  fill: #FFFFFF;
+  transition: 0.1s;
 }
 
 .about span {
@@ -480,8 +556,14 @@ body {
   }
 }
 @media (max-width: 992px) {
+  .main .main__flex {
+    display: block;
+  }
   .main .main__flex .main__info {
     max-width: 800px;
+  }
+  .main .main__flex .main__slider {
+    display: none;
   }
   .about h1 {
     font-size: 48px;
