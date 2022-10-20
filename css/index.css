@@ -465,6 +465,7 @@ body {
   background-repeat: no-repeat;
   background-size: 110%;
   margin-top: 90px;
+  padding: 10px;
 }
 .grade .grade__img .grade__flex {
   display: flex;
@@ -845,6 +846,19 @@ body {
   }
   .grade .grade__img {
     margin-top: 80px;
+    max-height: 611px;
+    height: auto;
+  }
+  .grade .grade__img .grade__flex .grade__years p {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .grade .grade__img .grade__flex .grade__info .grade__stars img {
+    width: 13%;
+    padding-right: 10px;
+  }
+  .grade .grade__img .grade__flex .grade__info p {
+    font-size: 24px;
   }
   .maecenas .maecenas__flex .maecenas__contacts {
     padding-top: 50px;
