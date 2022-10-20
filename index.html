@@ -156,6 +156,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="main__swiper_psevdo">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide main__swiper_slide-1"></div>
+                            <div class="swiper-slide main__swiper_slide-2"></div>
+                            <div class="swiper-slide main__swiper_slide-3"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -370,7 +377,18 @@
         const swiperMain = new Swiper('.main__swiper', {
             slidesPerView: 1,
             loop: true,
-            effect: 'fade',
+            effect: 'cards',
+
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev'
+            }
+        });
+
+        const swiperMainPsevdo = new Swiper('.main__swiper_psevdo', {
+            slidesPerView: 1,
+            loop: true,
+            effect: 'cards',
 
             navigation: {
                 nextEl: '.next',
@@ -380,7 +398,7 @@
         
         const swiperProduction = new Swiper('.productions__swiper', {
             breakpoints: {
-                768: {
+                992: {
                     slidesPerView: 4,
                 },
                 576: {
