@@ -23,14 +23,127 @@ body{
     background-color: rgb(51, 51, 51);
 }
 
+.wrapper{overflow-x: hidden;}
+
 ._content{
     max-width: 1171px;
     margin: 0 auto;
     padding: 0 30px;
 }
 
+//=======BURGER==========
+
+.burger-menu{
+    //z-index: 1000;
+}
+
+.menu-btn{
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 100;
+  }
+   
+  .menu-btn > span,
+  .menu-btn > span::before,
+  .menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 75%;
+    height: 3px;
+    background-color: #FFFFFF;
+    transition-duration: .25s;
+  }
+
+  .menu-btn > span::before {
+    content: '';
+    top: -8px;
+    width: 135%;
+  }
+  .menu-btn > span::after {
+    content: '';
+    top: 8px;
+    width: 65%
+  }
+   
+  .menubox{
+    z-index: 90;
+
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 100px 0;
+    list-style: none;
+    background-color: #333333;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+  }
+   
+  .menu-item {
+    display: block;
+    padding: 17px 24px;
+
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    transition-duration: .25s;
+  }
+  .menu-item:hover {
+    background-color: #616161;
+  }
+   
+   
+  #menu-toggle {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    opacity: 0;
+  }
+   
+  #menu-toggle:checked ~ .menu-btn > span{
+    width: 100%; 
+    transform: translate(200px) rotate(45deg);
+  }
+  #menu-toggle:checked ~ .menu-btn > span::before{
+    top: 0;
+    transform: rotate(0);
+    width: 100%;
+  }
+  #menu-toggle:checked ~ .menu-btn > span::after{
+    top: 0;
+    transform: rotate(90deg);
+    width: 100%;
+  }
+  #menu-toggle:checked ~ .menubox{
+    visibility: visible;
+    left: 0;
+  }
+
+
+  #menu-toggle:checked ~ body{
+    overflow: hidden;
+  }
+
+//=======================
+
 .main{
     height: 100vh;
+
+    overflow: hidden;
     
     background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url('../source/img/main_back.jpg');
     background-position: 50% 100%;
@@ -39,13 +152,16 @@ body{
 
     .main__flex{
         display: flex;
+
         padding-top: 267px;
+        padding-right: 100px;
 
         .main__info{
+            padding-top: 70px;
             max-width: 600px;
             flex-basis: 70%;
 
-            margin-right: 70px;
+            margin-right: 7%;
             
 
             h1{
@@ -685,12 +801,24 @@ body{
         .main__flex{
             //margin-left: 150px;
             padding-left: 10px;
-            padding-right: 10px;
+            padding-right: 50px;
+        }
+    }
+
+    .partners{
+        .partners__grid{
+            width: 80%;
         }
     }
 }
 
 @media  (max-width: 1260px){
+    .main{
+        .main__flex{
+            .main__slider{flex-basis: 50%;}
+        }
+    }
+
     .about{
         .about__flex{
             justify-content: space-around;
@@ -708,6 +836,7 @@ body{
     .main{
         .main__flex{
             display: block;
+            padding-right: 10px;
             .main__info{
                 max-width: 800px;
                 margin-right: 0;
@@ -778,8 +907,8 @@ body{
         .maecenas__add{
             flex-basis: auto;
             max-width: 1171px;
-            margin: 0 auto;
-            padding: 0 30px 0 15px;
+            //margin: 0 auto;
+            //padding: 0 30px 0 15px;
 
             .maecenas__forms{
                 .forms__big-form{
@@ -797,6 +926,8 @@ body{
         padding-right: 30px;
     }
 
+    .menu-btn{display: flex;}
+
     header{
         .header__flex{
             //margin-left: 0;
@@ -812,6 +943,7 @@ body{
             //margin: 0 auto;
             padding-left: 30px;
             padding-right: 30px;
+            padding-top: 150px;
 
             .main__info{
                 h1{
@@ -854,6 +986,7 @@ body{
     .partners{
         .partners__grid{
             width: 93.4%;
+            padding: 0;
         }
     }
 
@@ -915,7 +1048,24 @@ body{
 
     .maecenas{
         .maecenas__flex{
-            .maecenas__contacts{padding-top: 50px;}
+            .maecenas__contacts{
+                padding-top: 50px;
+
+                .maecenas__contacts_flex{
+                    .maecenas__phones{
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .maecenas__adress{
+                    flex-basis: 50%;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
 
             .maecenas__add{
                 .maecenas__forms{
@@ -929,7 +1079,7 @@ body{
                             flex-grow: 1
                         }
 
-                        .forms__small-form_flex-row-right{margin-left: 50px;}
+                        .forms__small-form_flex-row-right{margin-left: 20px;}
                     }
     
                     .forms__big-form{
