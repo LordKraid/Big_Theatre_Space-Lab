@@ -1,8 +1,9 @@
 header {
   position: fixed;
-  z-index: 10;
+  z-index: 80;
   width: 100%;
-  padding-top: 50px;
+  padding: 50px 0;
+  transition: 0.2s;
 }
 header .header__flex {
   display: flex;
@@ -31,6 +32,17 @@ header .header__flex .number {
   line-height: 22px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.scrolled {
+  background-color: #333333;
+  opacity: 0.95;
+  transition: 0.2s;
+  padding: 25px 0;
+  box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.2);
+}
+.scrolled .burger-menu .menu-btn {
+  top: 25px;
 }
 
 ._underline-anim {

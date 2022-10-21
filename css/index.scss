@@ -38,7 +38,7 @@ body{
 //=======BURGER==========
 
 .burger-menu{
-    //z-index: 1000;
+    z-index: 1000;
 }
 
 .menu-btn{
@@ -46,11 +46,13 @@ body{
     align-items: center;
     position: fixed;
     top: 50px;
-    left: 50px;
+    left: 40px;
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 120;
+
+    transition: 0.2s;
   }
    
   .menu-btn > span,
