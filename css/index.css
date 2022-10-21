@@ -437,12 +437,29 @@ body {
       writing-mode: vertical-rl;
   transform: rotate(-180deg);
 }
+.productions .productions__swiper .swiper-wrapper .swiper-slide .swiper-slide_zoom {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  opacity: 0;
+  transition: 0.2s;
+  filter: brightness(0.7);
+}
+.productions .productions__swiper .swiper-wrapper .swiper-slide .swiper-slide_zoom img {
+  width: 100%;
+}
+.productions .productions__swiper .swiper-wrapper .swiper-slide .swiper-slide_zoom:hover {
+  cursor: pointer;
+}
 .productions .productions__swiper .swiper-wrapper .swiper-slide:hover {
   transition: 0.2s;
   filter: brightness(1.5);
 }
 .productions .productions__swiper .swiper-wrapper .swiper-slide:hover .swiper-slide_text {
   opacity: 0;
+}
+.productions .productions__swiper .swiper-wrapper .swiper-slide:hover .swiper-slide_zoom {
+  opacity: 1;
 }
 .productions .productions__swiper .swiper-wrapper .slide-1 {
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url(../source/img/productions_1.jpg);
@@ -853,12 +870,18 @@ body {
     font-size: 45px;
     line-height: 60px;
   }
+  .grade .grade__img .grade__flex .grade__info .grade__stars {
+    padding-bottom: 10px;
+  }
   .grade .grade__img .grade__flex .grade__info .grade__stars img {
     width: 13%;
     padding-right: 10px;
   }
   .grade .grade__img .grade__flex .grade__info p {
-    font-size: 24px;
+    font-size: 18px;
+  }
+  .maecenas .maecenas__flex {
+    padding-top: 50px;
   }
   .maecenas .maecenas__flex .maecenas__contacts {
     padding-top: 50px;
@@ -895,19 +918,33 @@ body {
   .maecenas .maecenas__flex .maecenas__add .maecenas__forms .forms__big-form input {
     width: 100%;
   }
+  .maecenas .maecenas__flex .maecenas__add .maecenas__underforms p {
+    font-size: 10px;
+  }
+  .maecenas .maecenas__flex .maecenas__add .maecenas__underforms button {
+    width: 120px;
+    height: 40px;
+  }
+  .maecenas .maecenas__flex .maecenas__add .maecenas__underforms button span {
+    font-size: 14px;
+  }
   .about h1 {
     padding-top: 80px;
+    font-size: 30px;
   }
   .productions h1 {
     padding-top: 80px;
+    font-size: 30px;
   }
   .grade {
     padding-top: 80px;
   }
   .partners h1 {
     padding-top: 80px;
+    font-size: 30px;
   }
   .maecenas h1 {
     padding-top: 80px;
+    font-size: 30px;
   }
 }/*# sourceMappingURL=index.css.map */
