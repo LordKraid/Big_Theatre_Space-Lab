@@ -128,6 +128,10 @@ body {
   left: 0;
 }
 
+#menu-toggle:checked body {
+  overflow-y: hidden;
+}
+
 .menubox .menubox__social {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -140,10 +144,6 @@ body {
 .menubox .menubox__social a img {
   height: 50%;
   padding-bottom: 50px;
-}
-
-#menu-toggle:checked ~ .main {
-  opacity: 0;
 }
 
 .main {

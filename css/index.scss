@@ -137,6 +137,11 @@ body{
     left: 0;
   }
 
+  #menu-toggle:checked{
+    body{
+        overflow-y: hidden;
+    }
+  }
 
   .menubox{
     .menubox__social{
@@ -160,11 +165,6 @@ body{
             }
         }
     }
-  }
-
-
-  #menu-toggle:checked ~ .main{
-    opacity: 0;
   }
 
 //=======================
