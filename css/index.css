@@ -124,6 +124,20 @@ body {
   left: 0;
 }
 
+.menubox .menubox__social {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 200px;
+}
+.menubox .menubox__social a img {
+  height: 50%;
+  padding-bottom: 50px;
+}
+
 #menu-toggle:checked ~ body {
   overflow: hidden;
 }
