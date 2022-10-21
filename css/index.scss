@@ -13,6 +13,10 @@
     src: local('Open Sans Condensed'), url("../source/fonts/OpenSans_Condensed-Bold.woff") format('woff');
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     overflow-x: hidden;
 
@@ -40,7 +44,7 @@ body{
 .menu-btn{
     display: none;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: 50px;
     width: 26px;
@@ -107,7 +111,7 @@ body{
    
    
   #menu-toggle {
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: 50px;
 
@@ -159,8 +163,8 @@ body{
   }
 
 
-  #menu-toggle:checked ~ body{
-    overflow: hidden;
+  #menu-toggle:checked ~ .main{
+    opacity: 0;
   }
 
 //=======================
