@@ -34,6 +34,34 @@ const swiperProduction = new Swiper('.productions__swiper', {
     }
 });
 
+const swiperPartnersTop = new Swiper('.partners__swiper_top', {
+    breakpoints: {
+        992: {
+            slidesPerView: 4,
+        },
+        576: {
+            slidesPerView: 2.5,
+        },
+        0: {
+            slidesPerView: 2 ,
+        }
+    }
+});
+
+const swiperPartnersBottom = new Swiper('.partners__swiper_bottom', {
+    breakpoints: {
+        992: {
+            slidesPerView: 4,
+        },
+        576: {
+            slidesPerView: 2.5,
+        },
+        0: {
+            slidesPerView: 2 ,
+        }
+    }
+});
+
 
 
 let checkbox = document.getElementById('menu-toggle')
